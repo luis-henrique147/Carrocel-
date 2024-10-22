@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: rgb(41, 41, 41); */
+ 
+    background-image: url(https://cnc-info.ru/en/assets/images/bmp/bitmap-2/4-bitmap-2-0785.jpg);
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 10px;
+}
+
+.container {
+    width: 800px;
+    height: 460px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+.bar {
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bar:hover {
+    background-color: rgb(0, 0, 0);
+    padding: 0.5px;
+   
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+
+}
+
+#imagem2:checked ~ .nevegacao {
+    background-color: rgb(0, 17, 255);
+}
+
+input {
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 700%;
+
+}
+
+.imagem {
+    width: 14.2857142857%;
+    transition: all 0.5 cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#imagem1:checked ~ .img1 {
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1 {
+    margin-left: -14.2857142857%;
+}
+
+#imagem3:checked ~ .img1 {
+    margin-left: -28.57142857142857%;
+}
+
+#imagem4:checked ~ .img1 {
+    margin-left:-42.85714285714286%;
+}
+
+#imagem5:checked ~.img1 {
+    margin-left: -57.14285714285715% ;
+}
+
+#imagem6:checked ~.img1 {
+    margin-left:-71.42857142857144%;
+}
+
+#imagem7:checked ~.img1 {
+    margin-left: -85.71428571428573%;
+}
+
+
+footer{
+    width: 100;
+    margin-top: 100%;
+    background-image: url(https://www.reneteige.com/wp-content/uploads/2015/07/greytexture.jpg);
+    text-align: center;
+    padding: 10px; 
+}
+
+
+  
